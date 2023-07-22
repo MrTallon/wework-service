@@ -1,0 +1,27 @@
+### 测试
+POST localhost:8080/test
+Accept: application/json
+Content-Type: application/json
+
+{
+}
+> reponse-check.js
+
+### 创建联系我（非临时会话）
+POST localhost:8080/contact_way/create
+Accept: application/json
+Content-Type: application/json
+
+{
+  "accountCode":"YB",
+  "contactScene":"QR_CODE",
+  "contactType":"SINGLE_USER",
+  "miniProgramStyle":1,
+  "remark":"F",
+  "skipVerify":true,
+  "state":"F",
+  "weworkUserIds":[
+    "18812857228"
+  ]
+}
+> reponse-check.js
