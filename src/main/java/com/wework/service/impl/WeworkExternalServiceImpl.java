@@ -25,7 +25,8 @@ public class WeworkExternalServiceImpl implements WeworkExternalService {
     private static final String GET_EXTERNAL_CONTACT_WAY = "/cgi-bin/externalcontact/get_contact_way";
 
     private static final String DEFAULT_CONFIG = "a05e714484231a490bba60e62789695f";
-    private static final String DEFAULT_QR = "";
+    private static final String DEFAULT_QR =
+        "https://raw.githubusercontent.com/MrTallon/wework-service/master/src/main/resources/static/yb.jpg";
 
     @Override
     public WxCpService getWxCpService(String accountCode) {
